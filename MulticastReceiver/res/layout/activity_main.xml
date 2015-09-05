@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#0080FF"
+        android:text="This is a multicast recevier of the group: 233.45.17.10, port: 12222"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="Update"/>
+    
+    <TextView
+        android:id="@+id/tv_logcat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="logcat -v time -s MulticastReceiver" />
+    
+
+</LinearLayout>
